@@ -1,0 +1,106 @@
+.lista-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #6752a3; 
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lista-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+.lista-contatos {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: scale(1.01);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.contact-item strong {
+  font-size: 1.2rem;
+}
+
+.contact-item p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+.dados {
+  margin-bottom: 15px;
+}
+
+.botoes {
+  display: flex;
+  gap: 10px;
+}
+
+.botoes button {
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botoes button:first-child {
+  background-color: #ffa94d;
+  color: white;
+}
+
+.botoes button:first-child:hover {
+  background-color: #ffb866;
+}
+
+.botoes button:last-child {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.botoes button:last-child:hover {
+  background-color: #ff8787;
+}
+
+/* Inputs de edição */
+.contact-item input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  color: #333;
+}
+
+.contact-item input:focus {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+/* Mensagem de lista vazia */
+.lista-container p {
+  text-align: center;
+  font-size: 1rem;
+  opacity: 0.9;
+}
